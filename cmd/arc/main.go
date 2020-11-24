@@ -7,11 +7,11 @@ import (
 	"compress/flate"
 	"flag"
 	"fmt"
+	"github.com/oOceanArvhicer/archiver/v3"
 	"os"
 	"path/filepath"
 	"strings"
 
-	"github.com/mholt/archiver/v3"
 	"github.com/nwaples/rardecode"
 )
 
