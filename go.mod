@@ -1,4 +1,4 @@
-module github.com/mholt/archiver/v3
+module github.com/oOceanArvhicer/archiver/v3
 
 go 1.13
 

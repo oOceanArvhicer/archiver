@@ -596,9 +596,8 @@ func (z *Zip) Extract(source, target, destination string) error {
 			if err != nil {
 				return fmt.Errorf("relativizing paths: %v", err)
 			}
-			joined := filepath.Join(destination, end)
-
-			err = z.extractFile(f, joined, &zfh)
+			zfh.Name = end
+			err = z.extractFile(f, destination, &zfh)
 			if err != nil {
 				return fmt.Errorf("extracting file %s: %v", zfh.Name, err)
 			}
